@@ -9,10 +9,12 @@ import org.slf4j.LoggerFactory;
  * @author NiBo
  */
 // CSOFF: AbbreviationAsWordInName
+@SuppressWarnings({"PMD.UseUtilityClass"})
 public class GCD {
     private static final Logger LOGGER = LoggerFactory.getLogger(GCD.class);
 
     // CSOFF: Javadoc
+    @SuppressWarnings("PMD.UnusedFormalParameter")
     public static void main(String[] args) {
         int p = 24;
         int q = 60;
