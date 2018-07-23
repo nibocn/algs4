@@ -4,6 +4,7 @@ plugins {
     id 'eclipse'
 }
 
+apply from: "$rootDir/gradle/install-git-hooks.gradle"
 apply from: "$rootDir/gradle/pmd.gradle"
 
 repositories {
