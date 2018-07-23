@@ -4,7 +4,7 @@ plugins {
     id 'eclipse'
 }
 
-apply from: "$rootDir/quality/pmd/pmd.gradle"
+apply from: "$rootDir/gradle/pmd.gradle"
 
 repositories {
     jcenter()
