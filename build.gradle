@@ -4,9 +4,9 @@ plugins {
     id 'eclipse'
 }
 
-apply from: "$rootDir/gradle/install-git-hooks.gradle"
-apply from: "$rootDir/gradle/pmd.gradle"
-apply from: "$rootDir/gradle/checkstyle.gradle"
+apply from: "gradle/install-git-hooks.gradle"
+apply from: "gradle/pmd.gradle"
+apply from: "gradle/checkstyle.gradle"
 
 repositories {
     jcenter()

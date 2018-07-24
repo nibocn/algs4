@@ -1,9 +1,9 @@
 apply plugin: 'pmd'
 
-ext.pmdDir = "$rootDir/quality/pmd"
+ext.pmdDir = "quality/pmd"
 
 pmd {
-    ruleSetFiles = files("$pmdDir/pmd-ruleset_6.0.xml")
     toolVersion = '6.3.0'
+    ruleSetFiles = files("$pmdDir/pmd-ruleset_6.0.xml")
     println "PMD Version: ${toolVersion}"
 }
