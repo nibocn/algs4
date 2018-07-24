@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
  * @author NiBo
  */
 // CSOFF: AbbreviationAsWordInName
-@SuppressWarnings({"PMD.UseUtilityClass"})
+@SuppressWarnings({"PMD.UseUtilityClass", "PMD.ClassNamingConventions"})
 public class GCD {
     private static final Logger LOGGER = LoggerFactory.getLogger(GCD.class);
 
