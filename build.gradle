@@ -8,6 +8,7 @@ apply from: "gradle/install-git-hooks.gradle"
 apply from: "gradle/pmd.gradle"
 apply from: "gradle/checkstyle.gradle"
 apply from: "gradle/findbugs.gradle"
+apply from: "gradle/jacoco.gradle"
 
 repositories {
     jcenter()
