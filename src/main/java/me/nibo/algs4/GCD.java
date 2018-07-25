@@ -1,8 +1,5 @@
 package me.nibo.algs4;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * 找到两个数的最大公约数（欧几里德算法）
  *
@@ -11,18 +8,15 @@ import org.slf4j.LoggerFactory;
 // CSOFF: AbbreviationAsWordInName
 @SuppressWarnings({"PMD.UseUtilityClass", "PMD.ClassNamingConventions"})
 public class GCD {
-    private static final Logger LOGGER = LoggerFactory.getLogger(GCD.class);
 
-    // CSOFF: Javadoc
-    @SuppressWarnings("PMD.UnusedFormalParameter")
-    public static void main(String[] args) {
-        int p = 24;
-        int q = 60;
-        LOGGER.info("{}, {} 的最大公约数：{}", p, q, gcd(p, q));
-    }
-    // CSON: Javadoc
-
-    private static int gcd(int p, int q) {
+    /**
+     * 计算两个数的最大公约数
+     *
+     * @param p Number1
+     * @param q Number2
+     * @return 最大公约数
+     */
+    public static int gcd(int p, int q) {
         if (q == 0) {
             return p;
         }
