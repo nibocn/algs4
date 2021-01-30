@@ -12,5 +12,8 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 indent_size = 2
 
-[*.{java,gradle,kt,xml}]
+[*.{java,xml}]
+indent_size = 2
+
+[*.{gradle,kt}]
 indent_size = 4
