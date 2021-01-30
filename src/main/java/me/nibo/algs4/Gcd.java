@@ -7,7 +7,7 @@ package me.nibo.algs4;
  */
 // CSOFF: AbbreviationAsWordInName
 @SuppressWarnings({"PMD.UseUtilityClass", "PMD.ClassNamingConventions"})
-public class GCD {
+public class Gcd {
 
     /**
      * 计算两个数的最大公约数
