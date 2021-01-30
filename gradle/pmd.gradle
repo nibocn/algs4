@@ -1,9 +1,15 @@
 apply plugin: 'pmd'
 
-ext.pmdDir = "quality/pmd"
-
 pmd {
-    toolVersion = '6.3.0'
-    ruleSetFiles = files("$pmdDir/pmd-ruleset_6.0.xml")
     println "PMD Version: ${toolVersion}"
 }
+
+pmdMain {
+    ruleSetFiles = files("$rootDir/gradle/config/pmd-main.xml")
+}
+
+pmdTest {
+    ruleSetFiles = files("$rootDir/gradle/config/pmd-test.xml")
+}
+
+task pmd(dependsOn: [ pmdMain, pmdTest ])
