@@ -9,3 +9,5 @@ jacocoTestReport {
     html.enabled = true
   }
 }
+
+tasks.test.finalizedBy jacocoTestReport
