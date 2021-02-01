@@ -1,5 +1,11 @@
 apply plugin: 'jacoco'
 
 jacoco {
-    println "Jacoco Version: $toolVersion"
+  println "Jacoco Version: $toolVersion"
+}
+
+jacocoTestReport {
+  reports {
+    html.enabled = true
+  }
 }

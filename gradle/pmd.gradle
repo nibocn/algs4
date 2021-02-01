@@ -1,15 +1,15 @@
 apply plugin: 'pmd'
 
 pmd {
-    println "PMD Version: ${toolVersion}"
+  println "PMD Version: ${toolVersion}"
 }
 
 pmdMain {
-    ruleSetFiles = files("$rootDir/gradle/config/pmd-main.xml")
+  ruleSetFiles = files("$rootDir/gradle/config/pmd-main.xml")
 }
 
 pmdTest {
-    ruleSetFiles = files("$rootDir/gradle/config/pmd-test.xml")
+  ruleSetFiles = files("$rootDir/gradle/config/pmd-test.xml")
 }
 
 task pmd(dependsOn: [ pmdMain, pmdTest ])

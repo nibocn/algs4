@@ -1,10 +1,10 @@
 apply plugin: 'checkstyle'
 
 checkstyle {
-    configFile file("$rootDir/gradle/config/checkstyle.xml")
-    // 构建过程中不显示 Checkstyle 检查出的错误
-    // showViolations = false
-    println "Checkstyle Version: ${toolVersion}"
+  configFile file("$rootDir/gradle/config/checkstyle.xml")
+  // 构建过程中不显示 Checkstyle 检查出的错误
+  // showViolations = false
+  println "Checkstyle Version: ${toolVersion}"
 }
 
 task checkstyle(dependsOn: [ checkstyleMain, checkstyleTest ])
