@@ -1,9 +1,4 @@
-plugins {
-  id 'java'
-  id 'idea'
-  id 'eclipse'
-}
-
+apply from: "gradle/java.gradle"
 apply from: "gradle/idea.gradle"
 apply from: "gradle/eclipse.gradle"
 apply from: "gradle/install-git-hooks.gradle"
