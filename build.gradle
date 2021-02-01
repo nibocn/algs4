@@ -4,6 +4,8 @@ plugins {
   id 'eclipse'
 }
 
+apply from: "gradle/idea.gradle"
+apply from: "gradle/eclipse.gradle"
 apply from: "gradle/install-git-hooks.gradle"
 apply from: "gradle/checkstyle.gradle"
 apply from: "gradle/pmd.gradle"
@@ -21,18 +23,5 @@ dependencies {
 tasks.withType(Test) {
   testLogging {
     exceptionFormat 'full'
-  }
-}
-
-idea {
-  module {
-    downloadSources = false
-    downloadJavadoc = false
-  }
-}
-
-eclipse {
-  classpath {
-    downloadSources = false
   }
 }
