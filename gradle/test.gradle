@@ -1,0 +1,8 @@
+tasks.withType(Test) {
+  testLogging {
+    // 单元测试时显示完成的异常错误信息
+    exceptionFormat 'full'
+    // 单元测试显示标准的输出流
+    showStandardStreams = true
+  }
+}

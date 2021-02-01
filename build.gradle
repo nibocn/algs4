@@ -1,4 +1,5 @@
 apply from: "gradle/java.gradle"
+apply from: "gradle/test.gradle"
 apply from: "gradle/idea.gradle"
 apply from: "gradle/eclipse.gradle"
 apply from: "gradle/install-git-hooks.gradle"
